@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing component atom->input render default input without label 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp1-INPT"
+        id="Inp1"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          eye-off.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render default masked input with label and empty value 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="Inp1"
+    >
+      Default Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp1-INPT"
+        id="Inp1"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          eye-off.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render disabled input 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon input--disabled"
+  >
+    <label
+      class="label-class"
+      for="Inp3"
+    >
+      Disabled Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp3-INPT"
+        disabled=""
+        id="Inp3"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          eye-off.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with prevalue, default mask lenght 8, mask char is ● value length is 5 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value="●●●● ●"
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with prevalue, default mask length 8, mask char is ● 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value="●●●● ●●●● 9"
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with suffix icon 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with suffix icon change on click 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value="●●●● ●●●● 9"
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with text type and custom classes 1`] = `
+<DocumentFragment>
+  <div
+    class="input custom-class input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          eye-off.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input without suffix icon 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        maxlength="12"
+        placeholder=""
+        type="text"
+        value="●●●● ●●●● ●"
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

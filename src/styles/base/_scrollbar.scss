@@ -1,0 +1,18 @@
+@use '../../styles/abstracts/colors' as c;
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: c.$white;
+  border-radius: 0.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--neutrals-400);
+  border-radius: 0.5rem;
+}

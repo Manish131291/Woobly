@@ -1,0 +1,64 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+
+.au-container {
+  background-color: var(--neutrals-100);
+  padding: 2.5rem 2.5rem 1.5rem;
+}
+
+.au-card-container {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: c.$white;
+}
+.success-bg-color {
+  background-color: c.$green-50;
+}
+.success-color {
+  color: c.$green-700;
+}
+
+.pending-bg-color {
+  background-color: c.$warning-50;
+}
+
+.pending-color {
+  color: c.$warning-700;
+}
+.failed-bg-color {
+  background-color: c.$red-50;
+}
+
+.transferred-bg-color {
+  background-color: c.$green-50;
+}
+.transferred-color {
+  color: c.$green-700;
+}
+.failed-color {
+  color: c.$red-700;
+}
+.cancelled-color {
+  color: c.$warning-700;
+}
+.cancelled-bg-color {
+  background-color: c.$warning-50;
+}
+.circle-shape {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--primary-100);
+  border-radius: 12.5rem !important;
+}
+.circle-info {
+  color: var(--primary-600);
+  width: 2.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -1,9 +1,11 @@
-import './App.css';
-import IG_Input from './core-components/atoms/input/IG_Input.component'
-function App() {
+import * as React from "react";
+import "../styles/mood-login.style.scss";
+import { IG_Input } from "../../../core-components/atoms/input/IG_Input.component";
+
+const MoodLogin: React.FC = () => {
   return (
-    <div className="App">
-    <form className="login-form" onSubmit={(e) => e.preventDefault()}>
+    <>
+      <form className="login-form" onSubmit={(e) => e.preventDefault()}>
         <>
           <div>
             <IG_Input
@@ -33,8 +35,8 @@ function App() {
           </div>
         </>
       </form>
-    </div>
+    </>
   );
-}
+};
 
-export default App;
+export default MoodLogin;

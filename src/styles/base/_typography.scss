@@ -1,0 +1,59 @@
+@use './../abstracts/variables' as v;
+
+body,
+html {
+  font-family: v.$font-family;
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1280px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1281px) {
+    font-size: 16px;
+  }
+}
+
+@mixin create-font($font-name, $size, $line-height) {
+  .m-#{$font-name}-regular {
+    font-size: #{$size}rem;
+    font-weight: v.$font-weight-regular;
+    line-height: #{$line-height}rem;
+  }
+
+  .m-#{$font-name}-medium {
+    font-size: #{$size}rem;
+    font-weight: v.$font-weight-medium;
+    line-height: #{$line-height}rem;
+  }
+
+  .m-#{$font-name}-bold {
+    font-size: #{$size}rem;
+    font-weight: v.$font-weight-bold;
+    line-height: #{$line-height}rem;
+  }
+}
+
+@include create-font('text-xs', '.625', '.75');
+
+@include create-font('text-sm', '.75', '1.125');
+
+@include create-font('text-md', '.875', '1.25');
+
+@include create-font('text-lg', '1', '1.5');
+
+@include create-font('display-sm', '1.125', '1.75');
+
+@include create-font('display-md', '1.25', '1.875');
+
+@include create-font('display-lg', '1.375', '2');
+
+@include create-font('display-xl', '1.5', '2');
+
+@include create-font('display-xxl', '1.875', '2.375');
+
+@include create-font('placeholder-sm', '0.75', '1.125');
+
+@include create-font('placeholder-md', '0.875', '1.125');

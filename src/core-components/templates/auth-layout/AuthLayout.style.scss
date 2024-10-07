@@ -1,0 +1,67 @@
+@use '../../../styles/abstracts/colors' as c;
+@use '../../../styles/abstracts/mixins' as m;
+
+.auth-screen {
+    background-color: var(--neutrals-100);
+
+    .auth-screen__container {
+        display: flex;
+        margin: auto;
+    }
+
+    .auth-screen__content {
+        margin: auto;
+        padding: 3rem 2.5rem;
+    }
+
+    @include m.media('tablet') {
+
+        .auth-screen__carousel,
+        .auth-screen__content {
+            width: 50%;
+
+            .slide {
+                h3 {
+                    color: c.$white;
+                }
+
+                p {
+                    color: c.$white;
+                }
+            }
+        }
+    }
+
+    @include m.media('desktop') {
+
+        .auth-screen__carousel,
+        .auth-screen__content {
+            width: 50%;
+        }
+    }
+
+    .text-darkgray {
+        color: c.$darkGray;
+    }
+
+    .resend-otp-btn {
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .auth-screen-title {
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: c.$black;
+    }
+
+    .constitution-type {
+        p {
+            text-transform: capitalize;
+        }
+    }
+}

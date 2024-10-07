@@ -1,0 +1,96 @@
+@use './variables' as v;
+
+/* Mixin to generate media queries for responsive design */
+@mixin media($point) {
+  @if $point == tablet {
+    @media only screen and (min-width: v.$break-ipad) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media only screen and (min-width: v.$break-desktop) {
+      @content;
+    }
+  } @else if $point == abovedesktop {
+    @media only screen and (min-width: v.$break-abovelaptop) {
+      @content;
+    }
+  } @else if $point == mobileAbove {
+    @media only screen and (min-width: v.$break-mobile) {
+      @content;
+    }
+  } @else if $point == belowlaptop {
+    @media only screen and (max-width: v.$break-belowlaptop) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media only screen and (max-width: v.$break-mobile) {
+      @content;
+    }
+  } @else if $point == ipadproportrait {
+    @media only screen and (max-width: v.$break-ipadproportrait) {
+      @content;
+    }
+  } @else if $point == mobilesmall {
+    @media only screen and (max-width: v.$break-mobilesmall) {
+      @content;
+    }
+  } @else if $point == mobile580 {
+    @media only screen and (max-width: v.$break-mobile580) {
+      @content;
+    }
+  } @else if $point == ipad880 {
+    @media only screen and (max-width: v.$break-ipad880) {
+      @content;
+    }
+  } @else if $point == ipad {
+    @media only screen and (max-width: v.$break-ipad) {
+      @content;
+    }
+  } @else if $point == MDPI {
+    @media only screen and (max-width: v.$break-MDPI) {
+      @content;
+    }
+  }
+}
+
+.h {
+  line-height: 1.25rem;
+  font-weight: v.$fw-600;
+  &.h1 {
+    font-size: v.$fs-40;
+  }
+  &.h2 {
+    font-size: v.$fs-36;
+  }
+  &.h3 {
+    font-size: v.$fs-32;
+  }
+  &.h4 {
+    font-size: v.$fs-28;
+  }
+  &.h5 {
+    font-size: v.$fs-24;
+  }
+  &.h6 {
+    font-size: v.$fs-20;
+  }
+}
+.sh {
+  font-weight: v.$fw-500;
+
+  &.h7 {
+    font-size: v.$fs-16;
+  }
+  &.sh8 {
+    font-size: v.$fs-12;
+  }
+}
+
+/* for use multiple device same css, pass device name as input comma saperated*/
+@mixin responsive($list...) {
+  @each $item in $list {
+    @include media($item) {
+      @content;
+    }
+  }
+}

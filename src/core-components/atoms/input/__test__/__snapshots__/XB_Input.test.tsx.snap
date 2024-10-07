@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing component atom->input render default input with label and value 1`] = `
+<DocumentFragment>
+  <div
+    class="input"
+  >
+    <label
+      class="label-class"
+      for="Inp1"
+    >
+      Default Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp1-INPT"
+        id="Inp1"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render default input without label 1`] = `
+<DocumentFragment>
+  <div
+    class="input"
+  >
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp1-INPT"
+        id="Inp1"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render disabled input 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--disabled"
+  >
+    <label
+      class="label-class"
+      for="Inp3"
+    >
+      Disabled Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp3-INPT"
+        disabled=""
+        id="Inp3"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render focused input 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--disabled"
+  >
+    <label
+      class="label-class"
+      for="Inp3"
+    >
+      Disabled Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="Inp3-INPT"
+        disabled=""
+        id="Inp3"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with card 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--p-card"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <div
+        class="prefix"
+      >
+        <img
+          alt="dummy image"
+          src="dummy-image"
+        />
+      </div>
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with prefix content 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--p-child"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <div
+        class="prefix"
+      >
+        <span
+          class="prefix-content"
+        >
+          Test Content
+        </span>
+      </div>
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with prefix icon 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--p-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <span
+        class="p-icon"
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          mail.svg
+        </svg>
+      </span>
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with suffix icon 1`] = `
+<DocumentFragment>
+  <div
+    class="input input--s-icon"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        type="text"
+        value=""
+      />
+      <span
+        class="s-icon "
+      >
+        <svg
+          class=""
+          color="currentColor"
+          fill="currentColor"
+          height="20"
+          width="20"
+        >
+          help.svg
+        </svg>
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`testing component atom->input render input with text type and custom classes 1`] = `
+<DocumentFragment>
+  <div
+    class="input custom-class"
+  >
+    <label
+      class="label-class"
+      for="InpText"
+    >
+      Text Input
+    </label>
+    <div
+      class="input__wrapper"
+    >
+      <input
+        autocomplete="off"
+        data-testid="InpText-INPT"
+        id="InpText"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
